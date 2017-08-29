@@ -7,9 +7,11 @@
     "express": "^4.15.4",
     "express-handlebars": "^3.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
   "scripts": {
-    "start": "node ./app/server.js",
+    "start": "nodemon ./app/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
