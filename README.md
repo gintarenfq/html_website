@@ -28,3 +28,21 @@ Visi resursai (nuotraukos, iconeles, css, js) keliaus i public direktorija:
 * JS
   * ikeliauja i ``public/js/app.js``
   * pasiekiama puslapyje ``/js/app.js``
+  
+ ### HTML
+ 
+ Musu HTML guli ``views`` direktorijoj. Pavadinimas turetu tureti tokia konvencija:
+ 
+ ``pavadinimas.handlebars``
+ 
+ pvz:
+ * ``pagrindinis.handlebars``
+ * ``apie.handlebars``
+ 
+ Ekvivalentiskai jie bus pasiekiami pagal pavadinima:
+ 
+ * ``pagrindinis.handlebars`` - ``http://localhost:3000/pagrindinis`` 
+ * ``apie.handlebars`` - ``http://localhost:3000/apie`` 
+ 
+ Galune turi buti ne .html bet .handlebars.
+ 
