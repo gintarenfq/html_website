@@ -1,0 +1,41 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+
+<body>
+    <div>
+        {{> header }}
+        <div>
+            <h1>Saabumine</h1>
+            <h2>Ootame Teie tulekut peagi meie sündmusele.</h2>
+            <p>
+                Sündmus toimub järgmisel aadressil:<br><br>
+
+                Hilton Tallinn Park II korrus<br>
+                Fr. R. Kreutswaldi 23<br>
+                10147 Tallinn<br><br>
+
+                Soovitame tulla ilma autota kuid kui ikkagi otsustate enda autoga tulla siis parkimiskohti on piisavalt kõrvalasuvatel tänavatel.
+            </p>
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5864.614459385321!2d23.875238262658527!3d54.90280610880428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x74a69e6af93d550b!2sNFQ+Technologies+-+Kaunas!5e0!3m2!1sen!2slt!4v1504424147203" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div>
+            <h1>Kas Teil on lisaküsimusi seoses sündmusega?</h1>
+            <form action="">
+                Teie ees- ja perekonnanimi*:<br>
+                <input type="text" name="name" value=""><br>
+                Teie e-maili aadress*:<br>
+                <input type="text" name="email" value=""><br>
+                Teie sõnum:<br>
+                <textarea type="text" name="message" value="" rows="10" cols="60"></textarea><br><br>
+                <input type="submit" value="Saada">
+            </form>
+        </div>
+        {{> footer }}
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
