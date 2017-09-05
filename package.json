@@ -8,10 +8,12 @@
     "express-handlebars": "^3.0.0"
   },
   "devDependencies": {
+    "node-sass": "^4.5.3",
     "nodemon": "^1.11.0"
   },
   "scripts": {
     "start": "nodemon ./app/server.js",
+    "watch:assets": "node-sass styles/app.scss public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
