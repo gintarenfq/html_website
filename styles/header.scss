@@ -1,9 +1,12 @@
 @import "variables";
 
-.navbar {
+.bar {
   background-color: rgba(255, 255, 255, 0.2);
   display: inline-block;
   float: right;
+  font-family:$pageFont;
+  font-size:1rem;
+  line-height:60px;
   ul {
     list-style-type: none;
     margin: 0;
@@ -12,13 +15,59 @@
       float: left;
       a {
         display: block;
-        padding: 20px 10px;
+        padding: 0 30px;
         color: $primaryColor;
         text-decoration: none;
         &:hover {
-          color: blue;
+          color: #124D9D;
+          opacity: 1;
+          transition: opacity 0.2s ease-in-out;
         }
       }
     }
   }
+}
+
+
+.logo {
+  display: inline-block;
+  float: left;
+  color: #777;
+  padding: 25px;
+  img {
+    vertical-align: middle;
+    width: auto;
+    height: 140px;
+  }
+}
+
+#header {
+  overflow:hidden;
+  width: auto;
+  height: 300px;
+}
+
+
+.top {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+#grad-logo {
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right,rgba(255,255,255,0),rgba(255,255,255,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1)); /*Fx 3.6-15*/
+  background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,1)); /*Standard*/
+}
+
+#grad-menu {
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(255,255,255,0.25),rgba(255,255,255,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(255,255,255,0.25),rgba(255,255,255,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(255,255,255,0.25),rgba(255,255,255,1)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(255,255,255,0.25), rgba(255,255,255,1)); /*Standard*/
 }

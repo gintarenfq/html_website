@@ -1,0 +1,19 @@
+@import "variables";
+
+.footer-website {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family:$pageFont;
+  a {
+    font-size:1.1rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+.footer-other {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family:$pageFont;
+}

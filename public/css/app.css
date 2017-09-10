@@ -1,58 +1,182 @@
-.navbar {
-    background-color: rgba(255, 255, 255, 0.2);
-    display: inline-block;
-    float: right;
-}
-
-.navbar ul {
+.bar {
+  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  float: right;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 60px; }
+  .bar ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
-}
-
-.navbar ul li {
-    float: left;
-}
-
-.navbar ul li a {
-    display: block;
-    padding: 20px 10px;
-    color: #777;
-    text-decoration: none;
-}
-
-.navbar ul li a:hover {
-    color: blue;
-}
-
-body {
-    background-color: #eeeeee;
-    margin: 0;
-    padding: 0;
-}
-
-.logo img {
-    vertical-align: middle;
-    width: auto;
-    height: 140px;
-    padding: 25px;
-}
+    padding: 0; }
+    .bar ul li {
+      float: left; }
+      .bar ul li a {
+        display: block;
+        padding: 0 30px;
+        color: #666666;
+        text-decoration: none; }
+        .bar ul li a:hover {
+          color: #124D9D;
+          opacity: 1;
+          transition: opacity 0.2s ease-in-out; }
 
 .logo {
-    display: inline-block;
-    float: left;
-    color: #777;
-}
+  display: inline-block;
+  float: left;
+  color: #777;
+  padding: 25px; }
+  .logo img {
+    vertical-align: middle;
+    width: auto;
+    height: 140px; }
 
 #header {
-    background-image: url("https://125-estonia.cargobull-events.com/wp-content/uploads/sites/8/2017/07/key_visual_strassenschild.jpg");
-    width: auto;
-    height: 300px;
-    background-position: relative;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
+  overflow: hidden;
+  width: auto;
+  height: 300px; }
+
+.top {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  width: 100%; }
+
+#grad-logo {
+  background: white;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), white);
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0), white);
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), white);
+  /*Fx 3.6-15*/
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  /*Standard*/ }
+
+#grad-menu {
+  background: white;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.25), white);
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(right, rgba(255, 255, 255, 0.25), white);
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right, rgba(255, 255, 255, 0.25), white);
+  /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.25), white);
+  /*Standard*/ }
+
+.footer-website {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Open Sans", sans-serif; }
+  .footer-website a {
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none; }
+
+.footer-other {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Open Sans", sans-serif; }
+
+html {
+  font-size: 16px; }
+
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0; }
+
+.fullwidth {
+  width: 100%; }
+
+.padding-60 {
+  padding: 60px 0; }
+
+.bgwhite {
+  background-color: #ffffff; }
+
+.bgblue {
+  background-color: #194391; }
+
+.bggrey {
+  background-color: #e2e2e2; }
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  margin-bottom: 28px; }
+
+h2 {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold; }
+
+h2 {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold; }
+
+p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #666666;
+  font-family: "Open Sans", sans-serif; }
+
+.invitationText span {
+  text-align: center;
+  font-weight: 600; }
+
+label {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  margin-bottom: 8px; }
+
+.choices {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .choices span {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #666666;
+    font-family: "Open Sans", sans-serif; }
+
+.genderSelect select {
+  width: 25%;
+  padding: 8px 0;
+  margin-bottom: 20px; }
+
+.genderSelect option {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #666666;
+  font-family: "Open Sans", sans-serif; }
+
+.form-border {
+  border-radius: 0; }
 
 .btn-registration {
-    color: black;
-}
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+  height: 45px;
+  width: auto;
+  border: none;
+  border-radius: 0px;
+  padding: 0 25px; }
+  .btn-registration:hover {
+    background-color: #194391;
+    color: #ffffff; }
