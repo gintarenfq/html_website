@@ -1,71 +1,43 @@
 .bar {
-  background-color: rgba(255, 255, 255, 0.2);
-  display: inline-block;
   float: right;
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  line-height: 60px; }
+  font-size: 1rem; }
   .bar ul {
     list-style-type: none;
     margin: 0;
     padding: 0; }
-    .bar ul li {
-      float: left; }
-      .bar ul li a {
-        display: block;
-        padding: 0 30px;
-        color: #666666;
-        text-decoration: none; }
-        .bar ul li a:hover {
-          color: #124D9D;
-          opacity: 1;
-          transition: opacity 0.2s ease-in-out; }
+    .bar ul li a {
+      display: block;
+      padding: 15px 30px;
+      color: #666666;
+      text-decoration: none;
+      text-align: center; }
+      .bar ul li a:hover {
+        color: #194391;
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out; }
 
 .logo {
-  display: inline-block;
-  float: left;
-  color: #777;
-  padding: 25px; }
+  height: auto; }
   .logo img {
     vertical-align: middle;
     width: auto;
-    height: 140px; }
+    height: 70px; }
 
-#header {
-  overflow: hidden;
-  width: auto;
-  height: 300px; }
+@media only screen and (max-width: 768px) {
+  .bar {
+    clear: both;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important; }
+    .bar li {
+      border-bottom: 1px solid #e7e7e7; }
+    .bar li:nth-child(4) {
+      border: 0; } }
 
-.top {
-  position: absolute;
-  z-index: 9999;
-  top: 0;
-  right: 0;
-  width: 100%; }
-
-#grad-logo {
-  background: white;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), white);
-  /*Safari 5.1-6*/
-  background: -o-linear-gradient(left, rgba(255, 255, 255, 0), white);
-  /*Opera 11.1-12*/
-  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), white);
-  /*Fx 3.6-15*/
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-  /*Standard*/ }
-
-#grad-menu {
-  background: white;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.25), white);
-  /*Safari 5.1-6*/
-  background: -o-linear-gradient(right, rgba(255, 255, 255, 0.25), white);
-  /*Opera 11.1-12*/
-  background: -moz-linear-gradient(right, rgba(255, 255, 255, 0.25), white);
-  /*Fx 3.6-15*/
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.25), white);
-  /*Standard*/ }
+#nav-margin {
+  margin: 0;
+  border: 0; }
 
 .footer-website {
   padding-top: 10px;
@@ -82,6 +54,9 @@
   padding-bottom: 20px;
   font-family: "Open Sans", sans-serif; }
 
+.bottom {
+  height: 2.25em; }
+
 html {
   font-size: 16px; }
 
@@ -95,6 +70,9 @@ body {
 
 .padding-60 {
   padding: 60px 0; }
+
+.padding-10 {
+  padding: 20px 0; }
 
 .bgwhite {
   background-color: #ffffff; }
@@ -180,3 +158,22 @@ label {
   .btn-registration:hover {
     background-color: #194391;
     color: #ffffff; }
+
+.red-line {
+  height: 0.5em;
+  width: 50%;
+  background-color: red;
+  position: absolute;
+  z-index: 9999;
+  right: 0;
+  margin-top: -0.25em; }
+
+.home-img {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://125-estonia.cargobull-events.com/wp-content/uploads/sites/8/2017/07/ce_125y-key_visual-komp-lg-test.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center; }

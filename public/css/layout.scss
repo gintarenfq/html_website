@@ -1,5 +1,3 @@
-@import 'header.scss';
-@import 'footer.scss';
 
 html{
   font-size:16px;
@@ -16,6 +14,10 @@ body {
 
 .padding-60 {
   padding: 60px 0;
+}
+
+.padding-10 {
+  padding: 20px 0;
 }
 
 .bgwhite {
@@ -123,3 +125,25 @@ label {
     color:#ffffff;
   }
 }
+
+.red-line {
+  height: 0.5em;
+  width: 50%;
+  background-color: red;
+  position: absolute;
+  z-index: 9999;
+  right: 0;
+  margin-top: -0.25em;
+}
+
+.home-img {
+  height: 100vh;
+  width:100%;
+  background-image: url(https://125-estonia.cargobull-events.com/wp-content/uploads/sites/8/2017/07/ce_125y-key_visual-komp-lg-test.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+

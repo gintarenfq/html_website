@@ -5,15 +5,28 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.15.4",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "handlebars-loader": "^1.6.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "handlebars-webpack-plugin-simple": "^1.2.6",
+    "import-glob-loader": "^1.1.0",
     "node-sass": "^4.5.3",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
   },
   "scripts": {
-    "start": "nodemon ./app/server.js",
-    "watch:assets": "node-sass styles/app.scss public/css/app.css",
+    "start": "webpack --watch",
+    "serve": "nodemon ./app/server.js",
+    "watch:assets": "node-sass dist/app.js dist/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

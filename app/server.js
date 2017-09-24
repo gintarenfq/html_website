@@ -7,7 +7,7 @@ var app = express();
 
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
-app.use(express.static(path.resolve(__dirname, './../public')));
+app.use(express.static(path.resolve(__dirname, './../dist')));
 app.set('views', path.resolve(__dirname, './../views'));
 
 app.get('/', function (req, res) {
